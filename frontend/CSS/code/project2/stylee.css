@@ -1,0 +1,44 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.menu{
+    
+    cursor: pointer;
+}
+.menu:hover{
+    color: goldenrod;
+}
+.header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+.contactus{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+
+}
+.sendbutton{
+    width: 8cm;
+    background-color: yellow;
+    color: black;
+}
+
+.n{
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+    border:2px solid black;
+    padding: 20px;
+    
+}
+
+.n:hover{
+    color: white;
+    background-color: black;
+}
