@@ -106,3 +106,73 @@ Brackets [ ] → key comes from the variable.
 .reduce() --> not used mainly
 
  
+
+ # USE OF PROMISE ASYNC AND AWAIT
+
+ using promise:
+
+ <button onclick="start()">Click</button>
+<p id="para"></p>
+
+<script>
+   function details()
+   {
+    return new Promise(
+        function(resolve)
+        {
+            setTimeout(
+                function()
+                {
+                    resolve({name: "Shivaani ",age: 18})
+                }
+            ,2000)
+        }
+    )
+   }
+
+   function start()
+   {
+    var para=document.getElementById("para")
+    para.innerHTML="Loading user details..!"
+    details().then(
+        function(data)
+        {
+            para.innerHTML="Name:"+data.name+" Age:"+data.age;
+        }
+    )
+
+   }
+</script>
+
+
+# same using async and await!
+
+<button onclick="start()">Click</button>
+<p id="para"></p>
+
+<script>
+   function details()
+   {
+    return new Promise(
+        function(resolve)
+        {
+            setTimeout(
+                function()
+                {
+                    resolve({name: "Shivaani ",age: 18})
+                }
+            ,2000)
+        }
+    )
+   }
+
+  async function start()
+   {
+    var para=document.getElementById("para")
+    para.innerHTML="Loading user details"
+
+    var data=await details();
+    para.innerHTML="name :" + data.name +"Age:" +data.age
+
+   }
+</script>
