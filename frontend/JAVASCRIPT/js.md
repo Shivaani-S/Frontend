@@ -13,7 +13,7 @@
      -  let
      -  const
      
-#  var (global scope  )
+#  var (global scope)
 
 - Scope: Function-scoped. Accessible anywhere inside the function where declared.
 - Re-declaration: Can re-declare in the same scope.
